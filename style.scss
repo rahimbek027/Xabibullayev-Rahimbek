@@ -1,0 +1,224 @@
+$font-size-base: 62.5%;
+$spacing-unit: 1rem;
+$max-width-desktop: 1240px;
+$max-width-services: 124rem;
+$max-width-info: 124.2rem;
+$max-width-partners: 121.2rem;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  max-width: $max-width-desktop;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10*$spacing-unit;
+}
+
+.provider {
+  margin-block-start: 19*$spacing-unit;
+
+  > h1 {
+    font-size: 5.2*$spacing-unit;
+    margin-block-end: 4*$spacing-unit;
+  }
+
+  > div {
+    font-size: 1.6*$spacing-unit;
+    margin-block-end: 4*$spacing-unit;
+  }
+
+  > p {
+    font-size: 1.6*$spacing-unit;
+    text-decoration: none;
+
+    > a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.truck-foto {
+  max-width: 63.5*$spacing-unit;
+  margin-block-start: 10.9*$spacing-unit;
+}
+
+.services {
+  max-width: $max-width-services;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 8*$spacing-unit;
+  margin-left: 10*$spacing-unit;
+  margin-top: 4.8*$spacing-unit;
+  box-shadow: 0 0 3*$spacing-unit rgba(248, 248, 248, 1);
+  border-radius: 2*$spacing-unit;
+  margin-block-end: 100*$spacing-unit;
+
+  .servis {
+    max-width: 36*$spacing-unit;
+
+    > img {
+      margin-block-end: 2.4*$spacing-unit;
+      margin-block-start: 2.4*$spacing-unit;
+    }
+
+    > div {
+      > p {
+        font-size: 2*$spacing-unit;
+        font-weight: 600;
+        margin-block-end: 2.4*$spacing-unit;
+      }
+
+      > p:last-child {
+        font-size: 1.6*$spacing-unit;
+        margin-block-end: 4.8*$spacing-unit;
+      }
+    }
+  }
+}
+
+.malumotlar1,
+.malumotlar2 {
+  display: flex;
+  max-width: $max-width-info;
+  justify-content: space-between;
+  padding-inline: 6.6*$spacing-unit;
+  margin-left: 9.8*$spacing-unit;
+  margin-block-end: 6.2*$spacing-unit;
+
+  .malumot1,
+  .malumot2,
+  .malumot3,
+  .malumot4 {
+    display: flex;
+    align-items: center;
+    max-width: 44.7*$spacing-unit;
+    justify-content: space-between;
+    gap: 1.5*$spacing-unit;
+
+    > div {
+      > p {
+        font-size: 2*$spacing-unit;
+        font-weight: 600;
+        margin-block-end: 2.4*$spacing-unit;
+      }
+
+      > p:last-child {
+        font-size: 1.6*$spacing-unit;
+        margin-block-end: 4.8*$spacing-unit;
+      }
+    }
+  }
+}
+
+.comleted-work {
+  margin-left: 10*$spacing-unit;
+
+  > p {
+    font-size: 4.8*$spacing-unit;
+    font-weight: 600;
+    margin-block-end: 5.6*$spacing-unit;
+  }
+
+  > p:last-child {
+    font-size: 1.6*$spacing-unit;
+    margin-block-end: 5.6*$spacing-unit;
+  }
+}
+
+.completed-work-cards {
+  display: flex;
+  max-width: 123.9*$spacing-unit;
+  justify-content: space-between;
+  margin-left: 10*$spacing-unit;
+
+  .card {
+    max-width: 39.3*$spacing-unit;
+
+    > p {
+      font-size: 2*$spacing-unit;
+      font-weight: 600;
+      margin-block-end: 2.4*$spacing-unit;
+    }
+
+    > p:last-child {
+      font-size: 1.6*$spacing-unit;
+      margin-block-end: 4.8*$spacing-unit;
+    }
+  }
+}
+
+.dilivery {
+  margin-left: 10*$spacing-unit;
+
+  > p {
+    font-size: 4.8*$spacing-unit;
+    font-weight: 600;
+    margin-block-end: 4.8*$spacing-unit;
+  }
+
+  .stages {
+    max-width: 118.3*$spacing-unit;
+    padding-inline: 9.6*$spacing-unit;
+    padding-block: 2.4*$spacing-unit;
+    box-shadow: 0 0 3*$spacing-unit rgba(248, 248, 248, 1);
+    border-radius: 2*$spacing-unit;
+    margin-block-end: 2.4*$spacing-unit;
+
+    > div {
+      > p {
+        font-size: 2*$spacing-unit;
+        font-weight: 600;
+        margin-block-end: 4.8*$spacing-unit;
+      }
+
+      > p:last-child {
+        font-size: 1.6*$spacing-unit;
+        margin-block-end: 4.8*$spacing-unit;
+      }
+    }
+  }
+}
+
+.partnerss {
+  display: grid;
+
+  .partners1,
+  .partners2 {
+    display: flex;
+    max-width: $max-width-partners;
+    justify-content: space-between;
+    padding-inline: 14.6*$spacing-unit;
+
+    .logo {
+      max-width: 18.4*$spacing-unit;
+
+      > p:first-child {
+        font-size: 2*$spacing-unit;
+        font-weight: 600;
+        margin-top: 3*$spacing-unit;
+      }
+
+      > p:last-child {
+        font-size: 1.4*$spacing-unit;
+        margin: auto;
+      }
+    }
+  }
+}
+
+
